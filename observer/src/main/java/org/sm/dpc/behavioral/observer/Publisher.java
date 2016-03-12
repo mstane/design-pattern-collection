@@ -3,7 +3,14 @@ package org.sm.dpc.behavioral.observer;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.Nonnull;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Publisher implements Observable {
+	
+	private static final Logger logger = LoggerFactory.getLogger(Publisher.class);
 
 	private List<Observer> observers;
 	
@@ -12,20 +19,24 @@ public class Publisher implements Observable {
 	}
 	
 	@Override
-	public void registerObserver(Observer observer) {
+	public void registerObserver(@Nonnull Observer observer) {
 		observers.add(observer);
 	}
 
 	@Override
-	public void unregisterObserver(Observer observer) {
+	public void unregisterObserver(@Nonnull Observer observer) {
 		this.observers.remove(observer);
 	}
 
 	@Override
 	public void notifyObservers(String message) {
-		for (Observer observer : this.observers) {
-			observer.notify(message);
-		}
+		logger.debug("Publishing message: " + message);
+		this.observers.forEach(observer -> observer.notify(message));
+	}
+
+	@Override
+	public List<Observer> getSubscribers() {
+		return observers;
 	}
 
 }

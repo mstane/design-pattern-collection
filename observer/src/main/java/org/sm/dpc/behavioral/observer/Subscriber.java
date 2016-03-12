@@ -9,13 +9,21 @@ public class Subscriber implements Observer {
 	
 	private String name;
 	
+	private String message;
+	
 	public Subscriber(String name) {
 		this.name = name;
 	}
 
 	@Override
 	public void notify(String message) {
-		logger.debug("Subscriber " + name + " received message: " + message);
+		this.message = message;
+		logger.debug("Observer " + name + " received message: " + message);
+	}
+
+	@Override
+	public Object getMessage() {
+		return message;
 	}
 
 }
