@@ -4,6 +4,6 @@ Feature: Publishing
   and send to subscribed audience
 
   Scenario: Publishing
-    Given 3 subscribed users
+    Given number of subscribed users
     When publish a message "Hello people!"
     Then all subscribed users will receive the message

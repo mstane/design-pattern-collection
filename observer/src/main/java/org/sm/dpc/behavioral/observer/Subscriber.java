@@ -21,7 +21,6 @@ public class Subscriber implements Observer {
 		logger.debug("Observer " + name + " received message: " + message);
 	}
 
-	@Override
 	public Object getMessage() {
 		return message;
 	}

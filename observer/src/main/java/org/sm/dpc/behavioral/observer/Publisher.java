@@ -34,9 +34,4 @@ public class Publisher implements Observable {
 		this.observers.forEach(observer -> observer.notify(message));
 	}
 
-	@Override
-	public List<Observer> getSubscribers() {
-		return observers;
-	}
-
 }

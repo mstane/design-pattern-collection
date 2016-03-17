@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<java.util.ArrayList>
+	<org.sm.dpc.behavioral.observer>
+		<name>First Subscriber</name>
+	</org.sm.dpc.behavioral.observer>
+	<org.sm.dpc.behavioral.observer>
+		<name>Second Subscriber</name>
+	</org.sm.dpc.behavioral.observer>
+	<org.sm.dpc.behavioral.observer>
+		<name>Third Subscriber</name>
+	</org.sm.dpc.behavioral.observer>
+</java.util.ArrayList>
