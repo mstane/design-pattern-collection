@@ -45,6 +45,7 @@
 	<modules>
 		<module>common</module>
 		<module>observer</module>
+		<module>proxy</module>
 	</modules>
 
 	<properties>

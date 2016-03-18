@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<org.sm.dpc.structural.proxy.File>
+	<name>FileName1</name>
+	<content>Content1</content>
+</org.sm.dpc.structural.proxy.File>
