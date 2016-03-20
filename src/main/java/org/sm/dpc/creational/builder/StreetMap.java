@@ -74,8 +74,33 @@ public class StreetMap {
 		lowTrafficColor = builder.lowTrafficColor;
 	}
 
-	public static void main(String args[]) {
-		StreetMap map = new StreetMap.Builder(new Point(50, 50), new Point(100, 100)).landColor(Color.GRAY)
-				.waterColor(Color.BLUE.brighter()).build();
+	public Point getOrigin() {
+		return origin;
 	}
+
+	public Point getDestination() {
+		return destination;
+	}
+
+	public Color getWaterColor() {
+		return waterColor;
+	}
+
+	public Color getLandColor() {
+		return landColor;
+	}
+
+	public Color getHighTrafficColor() {
+		return highTrafficColor;
+	}
+
+	public Color getMediumTrafficColor() {
+		return mediumTrafficColor;
+	}
+
+	public Color getLowTrafficColor() {
+		return lowTrafficColor;
+	}
+
+	
 }
