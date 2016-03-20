@@ -1,4 +1,4 @@
-package org.sm.dpc.common;
+package org.sm.dpc.util;
 
 import java.io.IOException;
 import java.io.InputStream;

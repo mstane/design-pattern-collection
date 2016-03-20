@@ -11,7 +11,7 @@ import org.sm.dpc.behavioral.observer.Observable;
 import org.sm.dpc.behavioral.observer.Observer;
 import org.sm.dpc.behavioral.observer.Publisher;
 import org.sm.dpc.behavioral.observer.Subscriber;
-import org.sm.dpc.common.ObjectSerializer;
+import org.sm.dpc.util.ObjectSerializer;
 
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;

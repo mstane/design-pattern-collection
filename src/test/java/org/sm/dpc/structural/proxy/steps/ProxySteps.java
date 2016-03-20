@@ -3,16 +3,11 @@ package org.sm.dpc.structural.proxy.steps;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import java.util.List;
-import java.util.Observable;
-import java.util.Observer;
-
 import org.mockito.Mockito;
-import org.powermock.reflect.Whitebox;
-import org.sm.dpc.common.ObjectSerializer;
 import org.sm.dpc.structural.proxy.File;
 import org.sm.dpc.structural.proxy.Proxy;
 import org.sm.dpc.structural.proxy.Server;
+import org.sm.dpc.util.ObjectSerializer;
 
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
