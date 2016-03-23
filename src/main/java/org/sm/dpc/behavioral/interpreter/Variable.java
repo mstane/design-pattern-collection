@@ -10,7 +10,7 @@ class Variable implements Expression {
     }
     
     public int interpret(Map<String,Expression> variables)  { 
-        if(null==variables.get(name)) return 0; //Either return new Number(0).
+        if (variables.get(name) == null) return 0; //Either return new Number(0).
         return variables.get(name).interpret(variables); 
     }
 }
