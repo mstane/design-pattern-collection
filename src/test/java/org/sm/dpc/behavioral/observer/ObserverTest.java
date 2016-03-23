@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
         plugin = { "pretty", "html:target/cucumber" },
         glue = "org.sm.dpc.behavioral.observer.steps",
-        features = "classpath:cucumber/observer.feature"
+        features = "classpath:cucumber/behavioral/observer.feature"
 )
 public class ObserverTest {
 	

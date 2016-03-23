@@ -31,7 +31,7 @@ public class ObserverSteps {
 
 	@Given("^number of subscribed users$")
 	public void subscribed_users() throws Throwable {
-		List<Subscriber> subscribers = ObjectSerializer.loadObjectFromXml("data/observer.data.xml");
+		List<Subscriber> subscribers = ObjectSerializer.loadObjectFromXml("data/behavioral/observer.data.xml");
 		subscribers.forEach(
 				subscriber -> publisher.registerObserver(subscriber)
 				);		

@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
         plugin = { "pretty", "html:target/cucumber" },
         glue = "org.sm.dpc.creational.builder.steps",
-        features = "classpath:cucumber/builder.feature"
+        features = "classpath:cucumber/creational/builder.feature"
 )
 public class BuilderTest {
 	

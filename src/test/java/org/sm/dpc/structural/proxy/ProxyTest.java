@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
         plugin = { "pretty", "html:target/cucumber" },
         glue = "org.sm.dpc.structural.proxy.steps",
-        features = "classpath:cucumber/proxy.feature"
+        features = "classpath:cucumber/structural/proxy.feature"
 )
 public class ProxyTest {
 	

@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
         plugin = { "pretty", "html:target/cucumber" },
         glue = "org.sm.dpc.behavioral.chainofresponsibility.steps",
-        features = "classpath:cucumber/chainOfResponsibility.feature"
+        features = "classpath:cucumber/behavioral/chainOfResponsibility.feature"
 )
 public class ChainOfResponsibilityTest {
 	

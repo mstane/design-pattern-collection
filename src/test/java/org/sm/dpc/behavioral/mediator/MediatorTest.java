@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
         plugin = { "pretty", "html:target/cucumber" },
         glue = "org.sm.dpc.behavioral.mediator.steps",
-        features = "classpath:cucumber/mediator.feature"
+        features = "classpath:cucumber/behavioral/mediator.feature"
 )
 public class MediatorTest {
 	

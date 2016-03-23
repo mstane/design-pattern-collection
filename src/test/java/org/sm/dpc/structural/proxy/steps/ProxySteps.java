@@ -28,7 +28,7 @@ public class ProxySteps {
 		
 		proxy = new Proxy(server);
 		
-		testFile = ObjectSerializer.loadObjectFromXml("data/proxy.data.xml");
+		testFile = ObjectSerializer.loadObjectFromXml("data/structural/proxy.data.xml");
 	}
 
 	@Given("^one file remotely$")
