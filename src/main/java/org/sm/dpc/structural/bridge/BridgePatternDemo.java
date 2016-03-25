@@ -1,6 +1,6 @@
 package org.sm.dpc.structural.bridge;
 
-public class BridgePattern {
+public class BridgePatternDemo {
 
 	public static void main(String[] args) {
 
