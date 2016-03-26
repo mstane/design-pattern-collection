@@ -3,7 +3,12 @@ package org.sm.dpc.behavioral.strategy;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Customer {
+	
+	private static final Logger logger = LoggerFactory.getLogger(Customer.class);
 
 	private List<Double> drinks;
 	private BillingStrategy strategy;
@@ -23,7 +28,7 @@ public class Customer {
 		for (Double i : drinks) {
 			sum += i;
 		}
-		System.out.println("Total due: " + sum);
+		logger.debug("Total due: " + sum);
 		drinks.clear();
 	}
 	

@@ -1,4 +1,4 @@
-package org.sm.dpc.behavioral.observer.steps;
+package org.sm.dpc.behavioral.observer;
 
 import static org.junit.Assert.assertEquals;
 

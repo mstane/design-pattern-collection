@@ -1,4 +1,4 @@
-package org.sm.dpc.behavioral.strategy.steps;
+package org.sm.dpc.behavioral.strategy;
 
 import static org.junit.Assert.assertEquals;
 

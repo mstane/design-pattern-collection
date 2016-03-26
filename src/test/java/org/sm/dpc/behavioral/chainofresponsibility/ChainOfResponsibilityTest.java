@@ -8,7 +8,6 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = { "pretty", "html:target/cucumber" },
-        glue = "org.sm.dpc.behavioral.chainofresponsibility.steps",
         features = "classpath:cucumber/behavioral/chainOfResponsibility.feature"
 )
 public class ChainOfResponsibilityTest {

@@ -1,4 +1,4 @@
-package org.sm.dpc.behavioral.mediator.steps;
+package org.sm.dpc.behavioral.mediator;
 
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;

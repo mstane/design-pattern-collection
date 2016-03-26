@@ -1,4 +1,4 @@
-package org.sm.dpc.behavioral.chainofresponsibility.steps;
+package org.sm.dpc.behavioral.chainofresponsibility;
 
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;

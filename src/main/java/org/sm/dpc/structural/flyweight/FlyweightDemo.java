@@ -1,6 +1,11 @@
 package org.sm.dpc.structural.flyweight;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class FlyweightDemo {
+	
+	private static final Logger logger = LoggerFactory.getLogger(FlyweightDemo.class);
 	
 	public static void main(String[] args) {
 		CoffeeShop shop = new CoffeeShop();
@@ -19,7 +24,7 @@ public class FlyweightDemo {
 		shop.takeOrder("Espresso", 121);
 
 		shop.service();
-		System.out.println(shop.report());
+		logger.debug(shop.report());
 	}
 
 }

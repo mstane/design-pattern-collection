@@ -1,6 +1,12 @@
 package org.sm.dpc.structural.decorator;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 class TextField implements Widget {
+	
+	private static final Logger logger = LoggerFactory.getLogger(TextField.class);
+	
 	private int width, height;
 
 	public TextField(int w, int h) {
@@ -9,6 +15,6 @@ class TextField implements Widget {
 	}
 
 	public void draw() {
-		System.out.println("TextField: " + width + ", " + height);
+		logger.debug("TextField: " + width + ", " + height);
 	}
 }

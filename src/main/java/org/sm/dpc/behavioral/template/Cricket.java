@@ -1,19 +1,24 @@
 package org.sm.dpc.behavioral.template;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Cricket extends Game {
+	
+	private static final Logger logger = LoggerFactory.getLogger(Cricket.class);
 
 	@Override
 	void endPlay() {
-		System.out.println("Cricket Game Finished!");
+		logger.debug("Cricket Game Finished!");
 	}
 
 	@Override
 	void initialize() {
-		System.out.println("Cricket Game Initialized! Start playing.");
+		logger.debug("Cricket Game Initialized! Start playing.");
 	}
 
 	@Override
 	void startPlay() {
-		System.out.println("Cricket Game Started. Enjoy the game!");
+		logger.debug("Cricket Game Started. Enjoy the game!");
 	}
 }

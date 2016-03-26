@@ -1,6 +1,12 @@
 package org.sm.dpc.structural.flyweight;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 class Order {
+	
+	private static final Logger logger = LoggerFactory.getLogger(Order.class);
+	
 	private final int tableNumber;
 	private final CoffeeFlavour flavour;
 
@@ -10,6 +16,6 @@ class Order {
 	}
 
 	void serve() {
-		System.out.println("Serving " + flavour + " to table " + tableNumber);
+		logger.debug("Serving " + flavour + " to table " + tableNumber);
 	}
 }

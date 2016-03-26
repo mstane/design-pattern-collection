@@ -1,4 +1,4 @@
-package org.sm.dpc.creational.builder.steps;
+package org.sm.dpc.creational.builder;
 
 import static org.junit.Assert.assertNotNull;
 

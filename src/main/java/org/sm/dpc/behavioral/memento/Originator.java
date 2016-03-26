@@ -1,6 +1,12 @@
 package org.sm.dpc.behavioral.memento;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 class Originator {
+	
+	private static final Logger logger = LoggerFactory.getLogger(Originator.class);
+	
 	private String state;
 	/*
 	 * lots of memory consumptive private data that is not necessary to define
@@ -8,17 +14,17 @@ class Originator {
 	 */
 
 	public void set(String state) {
-		System.out.println("Originator: Setting state to " + state);
+		logger.debug("Originator: Setting state to " + state);
 		this.state = state;
 	}
 
 	public Memento saveToMemento() {
-		System.out.println("Originator: Saving to Memento.");
+		logger.debug("Originator: Saving to Memento.");
 		return new Memento(state);
 	}
 
 	public void restoreFromMemento(Memento m) {
 		state = m.getSavedState();
-		System.out.println("Originator: State after restoring from Memento: " + state);
+		logger.debug("Originator: State after restoring from Memento: " + state);
 	}
 }

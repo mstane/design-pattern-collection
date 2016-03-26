@@ -8,7 +8,6 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = { "pretty", "html:target/cucumber" },
-        glue = "org.sm.dpc.creational.builder.steps",
         features = "classpath:cucumber/creational/builder.feature"
 )
 public class BuilderTest {

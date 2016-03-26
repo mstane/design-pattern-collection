@@ -1,6 +1,11 @@
 package org.sm.dpc.creational.prototype;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Rectangle extends Shape {
+	
+	private static final Logger logger = LoggerFactory.getLogger(Rectangle.class);
 
 	public Rectangle() {
 		type = "Rectangle";
@@ -8,6 +13,6 @@ public class Rectangle extends Shape {
 
 	@Override
 	public void draw() {
-		System.out.println("Inside Rectangle::draw() method.");
+		logger.debug("Inside Rectangle::draw() method.");
 	}
 }

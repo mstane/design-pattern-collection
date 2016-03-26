@@ -1,20 +1,25 @@
 package org.sm.dpc.behavioral.iterator;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class IteratorDemo {
+	
+	private static final Logger logger = LoggerFactory.getLogger(IteratorDemo.class);
 
 	public static void main(String[] args) {
 		ChannelCollection channels = populateChannels();
 		ChannelIterator baseIterator = channels.iterator(ChannelTypeEnum.ALL);
 		while (baseIterator.hasNext()) {
 			Channel c = baseIterator.next();
-			System.out.println(c.toString());
+			logger.debug(c.toString());
 		}
-		System.out.println("******");
+		logger.debug("******");
 		// Channel Type Iterator
 		ChannelIterator englishIterator = channels.iterator(ChannelTypeEnum.ENGLISH);
 		while (englishIterator.hasNext()) {
 			Channel c = englishIterator.next();
-			System.out.println(c.toString());
+			logger.debug(c.toString());
 		}
 	}
 

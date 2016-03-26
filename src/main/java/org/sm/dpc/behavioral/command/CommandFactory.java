@@ -3,7 +3,14 @@ package org.sm.dpc.behavioral.command;
 import java.util.HashMap;
 import java.util.stream.Collectors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.sm.dpc.behavioral.observer.Publisher;
+
 public final class CommandFactory {
+	
+	private static final Logger logger = LoggerFactory.getLogger(Publisher.class);
+	
 	private final HashMap<String, Command>	commands;
 	
 	private CommandFactory() {
@@ -21,7 +28,7 @@ public final class CommandFactory {
 	}
 
 	public void listCommands() {
-		System.out.println("Enabled commands: " + commands.keySet().stream().collect(Collectors.joining(", ")));
+		logger.debug("Enabled commands: " + commands.keySet().stream().collect(Collectors.joining(", ")));
 	}
 	
 	/* Factory pattern */
@@ -29,8 +36,8 @@ public final class CommandFactory {
 		CommandFactory cf = new CommandFactory();
 
 		// commands are added here using lambdas. It is also possible to dynamically add commands without editing the code.
-		cf.addCommand("Light on", () -> System.out.println("Light turned on"));
-		cf.addCommand("Light off", () -> System.out.println("Light turned off"));
+		cf.addCommand("Light on", () -> logger.debug("Light turned on"));
+		cf.addCommand("Light off", () -> logger.debug("Light turned off"));
 
 		return cf;
 	}
