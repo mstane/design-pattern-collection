@@ -45,20 +45,20 @@
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 
-		<jsr305.version>3.0.1</jsr305.version>
-		<slf4j-api.version>1.7.18</slf4j-api.version>
-		<logback.version>1.1.6</logback.version>
-		<xstream.version>1.4.8</xstream.version>
+		<jsr305.version>3.0.2</jsr305.version>
+		<slf4j-api.version>1.7.25</slf4j-api.version>
+		<logback.version>1.2.3</logback.version>
+		<xstream.version>1.4.10</xstream.version>
 
-		<cucumber.version>1.2.4</cucumber.version>
+		<cucumber.version>1.2.5</cucumber.version>
 		<mockito.version>1.10.19</mockito.version>
-		<powermock.version>1.6.4</powermock.version>
+		<powermock.version>1.7.3</powermock.version>
 		<junit.version>4.12</junit.version>
 
-		<checkstyle.version>6.16.1</checkstyle.version>
-		<checkstyle.plugin.version>2.16</checkstyle.plugin.version>
-		<pmd.plugin.version>3.4</pmd.plugin.version>
-		<findbugs.plugin.version>3.0.3</findbugs.plugin.version>
+		<checkstyle.version>8.2</checkstyle.version>
+		<checkstyle.plugin.version>2.17</checkstyle.plugin.version>
+		<pmd.plugin.version>3.8</pmd.plugin.version>
+		<findbugs.plugin.version>3.0.5</findbugs.plugin.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
