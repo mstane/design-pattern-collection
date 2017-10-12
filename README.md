@@ -1,5 +1,7 @@
 # Design Pattern Collection
 
+[![Build Status](https://travis-ci.org/mstane/design-pattern-collection.svg?branch=command-pattern-tests)](https://travis-ci.org/mstane/design-pattern-collection)
+
 Collection of Design Patterns in real practice implemented in Java in Behavior-Driven Development (BDD) manner.
 
 ###The structure of a story
