@@ -1,8 +1,10 @@
 package org.sm.dpc.behavioral.command;
 
-@FunctionalInterface
+/**
+ * The Command interface
+ */
 public interface Command {
-	
-	public void apply();
-	
+
+    void apply();
+
 }

@@ -5,10 +5,10 @@ Feature: Light switcher
   
   Scenario: Switch on the lights
     Given light switcher
-    When the switcher in off
+    When the switcher is off
     Then it should change the state in on  
     
-  Scenario: Switch on the lights
+  Scenario: Switch off the lights
     Given light switcher
-    When the switcher in off
-    Then it should change the state in on  
+    When the switcher is on
+    Then it should change the state in off
