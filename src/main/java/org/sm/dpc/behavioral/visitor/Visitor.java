@@ -1,11 +1,11 @@
 package org.sm.dpc.behavioral.visitor;
 
-public interface Visitor {
-	
-	public void visit(BookVisitable item);
+interface Visitor {
 
-	public void visit(CdVisitable item);
+    void visit(BookVisitable item);
 
-	public void visit(DvdVisitable itme);
-	
+    void visit(CdVisitable item);
+
+    void visit(DvdVisitable item);
+
 }
