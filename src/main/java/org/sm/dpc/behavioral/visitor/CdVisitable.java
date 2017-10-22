@@ -6,12 +6,4 @@ public class CdVisitable implements Visitable {
 		visitor.visit(this);
 	}
 
-	public double getPrice() {
-		return 5;
-	}
-
-	public double getWeight() {
-		return 0.1;
-	}
-
 }

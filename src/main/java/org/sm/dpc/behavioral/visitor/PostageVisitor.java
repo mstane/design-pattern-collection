@@ -10,14 +10,14 @@ public class PostageVisitor implements Visitor {
 	}
 
 	public void visit(CdVisitable cd) {
-		
+		totalPostageForCart += 5;
 	}
 
 	public void visit(DvdVisitable dvd) {
-		
+		totalPostageForCart += 3;
 	}
 
-	public double getTotalPostage() {
+	double getTotalPostage() {
 		return totalPostageForCart;
 	}
 	

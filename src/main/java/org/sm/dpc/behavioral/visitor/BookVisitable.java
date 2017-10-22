@@ -1,17 +1,24 @@
 package org.sm.dpc.behavioral.visitor;
 
-public class BookVisitable implements Visitable {
+class BookVisitable implements Visitable {
+    private double price;
+    private double weight;
 
-	public void accept(Visitor visitor) {
-		visitor.visit(this);
-	}
+    BookVisitable(double price, double weight) {
+        this.price = price;
+        this.weight = weight;
+    }
 
-	public double getPrice() {
-		return 15;
-	}
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 
-	public double getWeight() {
-		return 1.65;
-	}
-	
+    double getPrice() {
+        return price;
+    }
+
+    double getWeight() {
+        return weight;
+    }
+
 }
