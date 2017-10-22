@@ -1,6 +1,7 @@
 # Design Pattern Collection
 
 [![Build Status](https://travis-ci.org/mstane/design-pattern-collection.svg?branch=command-pattern-tests)](https://travis-ci.org/mstane/design-pattern-collection)
+[![Quality Gate](https://sonarcloud.io/api/badges/gate?key=org.sm.dpc:dpc&metric=coverage)](https://sonarcloud.io/dashboard/index/org.sm.dpc:dpc)
 
 Collection of Design Patterns in real practice implemented in Java in Behavior-Driven Development (BDD) manner.
 
