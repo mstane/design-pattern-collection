@@ -1,9 +1,9 @@
-Feature: Shapes
-  In order to avoid explicitly creating new shape
-  As a drawer
-  I want to get them cloned
+Feature: Cakes
+  In order to have promptly and quality service
+  As a cake store
+  I want to make well proven tasty cakes
 
-  Scenario: Drawing shapes
-    Given cache of all sorts of different shapes 
-    When chose the shape
-    Then it will be cloned from the cache
+  Scenario: Making cakes
+    Given all sorts of cakes
+    When chose the cake
+    Then it is made using the same recipe
